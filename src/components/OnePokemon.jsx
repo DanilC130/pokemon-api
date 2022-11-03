@@ -4,6 +4,7 @@ import axios from 'axios';
 const OnePokemon = props => {
     const { pokemon } = props;
     const [thisPokemon, setThisPokemon] = useState({
+        name: "",
         sprites: {
             front_default: ""
         }
@@ -23,8 +24,8 @@ const OnePokemon = props => {
     return (
         <>
 
-            {/* <h1>Hi I am OnePokemon: {pokemon.name}</h1>
-            <p>And my url is {pokemon.url}</p> */}
+            <p>Hi I am {pokemon.name}</p>
+            {/* <p>And my url is {pokemon.url}</p> */}
             <img src={thisPokemon.sprites.front_default} alt="" />
 
 

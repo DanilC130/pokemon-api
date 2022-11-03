@@ -7,7 +7,7 @@ const Pokemon = props => {
     const [allPokemon, setAllPokemon] = useState([]);
 
     const api = () => {
-        axios.get("https://pokeapi.co/api/v2/pokemon?limit=151")
+        axios.get("https://pokeapi.co/api/v2/pokemon?limit=807")
             .then(res => {
                 // console.log(res.data.results);
                 setAllPokemon(res.data.results);
